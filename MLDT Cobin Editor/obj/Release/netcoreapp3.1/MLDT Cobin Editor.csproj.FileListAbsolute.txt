@@ -1,0 +1,16 @@
+C:\Users\Alice\source\repos\MLDT Cobin Editor\MLDT Cobin Editor\bin\Release\netcoreapp3.1\MLDT Cobin Editor.exe
+C:\Users\Alice\source\repos\MLDT Cobin Editor\MLDT Cobin Editor\bin\Release\netcoreapp3.1\MLDT Cobin Editor.deps.json
+C:\Users\Alice\source\repos\MLDT Cobin Editor\MLDT Cobin Editor\bin\Release\netcoreapp3.1\MLDT Cobin Editor.runtimeconfig.json
+C:\Users\Alice\source\repos\MLDT Cobin Editor\MLDT Cobin Editor\bin\Release\netcoreapp3.1\MLDT Cobin Editor.runtimeconfig.dev.json
+C:\Users\Alice\source\repos\MLDT Cobin Editor\MLDT Cobin Editor\bin\Release\netcoreapp3.1\MLDT Cobin Editor.dll
+C:\Users\Alice\source\repos\MLDT Cobin Editor\MLDT Cobin Editor\bin\Release\netcoreapp3.1\MLDT Cobin Editor.pdb
+C:\Users\Alice\source\repos\MLDT Cobin Editor\MLDT Cobin Editor\obj\Release\netcoreapp3.1\MLDT Cobin Editor.csproj.AssemblyReference.cache
+C:\Users\Alice\source\repos\MLDT Cobin Editor\MLDT Cobin Editor\obj\Release\netcoreapp3.1\MLDT_Cobin_Editor.Form1.resources
+C:\Users\Alice\source\repos\MLDT Cobin Editor\MLDT Cobin Editor\obj\Release\netcoreapp3.1\MLDT Cobin Editor.csproj.GenerateResource.cache
+C:\Users\Alice\source\repos\MLDT Cobin Editor\MLDT Cobin Editor\obj\Release\netcoreapp3.1\MLDT Cobin Editor.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alice\source\repos\MLDT Cobin Editor\MLDT Cobin Editor\obj\Release\netcoreapp3.1\MLDT Cobin Editor.AssemblyInfoInputs.cache
+C:\Users\Alice\source\repos\MLDT Cobin Editor\MLDT Cobin Editor\obj\Release\netcoreapp3.1\MLDT Cobin Editor.AssemblyInfo.cs
+C:\Users\Alice\source\repos\MLDT Cobin Editor\MLDT Cobin Editor\obj\Release\netcoreapp3.1\MLDT Cobin Editor.csproj.CoreCompileInputs.cache
+C:\Users\Alice\source\repos\MLDT Cobin Editor\MLDT Cobin Editor\obj\Release\netcoreapp3.1\MLDT Cobin Editor.dll
+C:\Users\Alice\source\repos\MLDT Cobin Editor\MLDT Cobin Editor\obj\Release\netcoreapp3.1\MLDT Cobin Editor.pdb
+C:\Users\Alice\source\repos\MLDT Cobin Editor\MLDT Cobin Editor\obj\Release\netcoreapp3.1\MLDT Cobin Editor.genruntimeconfig.cache
