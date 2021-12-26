@@ -30,3 +30,4 @@ C:\Users\Alice\Source\Repos\MLDT-Cobin-Editor\MLDT Cobin Editor\obj\Debug\netcor
 C:\Users\Alice\Source\Repos\MLDT-Cobin-Editor\MLDT Cobin Editor\obj\Debug\netcoreapp3.1\MLDT Cobin Editor.dll
 C:\Users\Alice\Source\Repos\MLDT-Cobin-Editor\MLDT Cobin Editor\obj\Debug\netcoreapp3.1\MLDT Cobin Editor.pdb
 C:\Users\Alice\Source\Repos\MLDT-Cobin-Editor\MLDT Cobin Editor\obj\Debug\netcoreapp3.1\MLDT Cobin Editor.genruntimeconfig.cache
+C:\Users\Alice\source\repos\MLDT-Cobin-Editor\MLDT Cobin Editor\obj\Debug\netcoreapp3.1\MLDT_Cobin_Editor.Properties.Resources.resources
