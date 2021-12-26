@@ -68,6 +68,21 @@ namespace MLDT_Cobin_Editor
                         cmbbxMStartingBoots.SelectedIndex = mStartingBoots2;
                     }
 
+                    // Mario Starting Hammer
+                    {
+                        savegame_br.BaseStream.Position = 0x559004;
+                        byte mStartingHammer = (byte)savegame_fs.ReadByte();
+                        roNumudMStartingHammer.Text = (mStartingHammer.ToString()); // Sets the value to a hidden text box
+                        cmbbxMStartingHammers.SelectedIndex = mStartingHammer-35;
+                    }
+
+                    // Mario Starting Gear
+                    {
+                        savegame_br.BaseStream.Position = 0x559006;
+                        byte mStartingGear = (byte)savegame_fs.ReadByte();
+                        roNumudMStartingGear.Text = (mStartingGear.ToString()); // Sets the value to a hidden text box
+                        cmbbxMStartingGear.SelectedIndex = mStartingGear-70;
+                    }
 
                     savegame_br.Close();
                 }
@@ -91,6 +106,17 @@ namespace MLDT_Cobin_Editor
             Array.Reverse(mStartingBoots);
             update_save_open.Position = Convert.ToInt64("559002", 16);
             update_save_write.Write(mStartingBoots);
+
+            byte[] mStartingHammer = ML4E_StringToByteArray(byte.Parse(roNumudMStartingHammer.Text).ToString("X2"));
+            Array.Reverse(mStartingHammer);
+            update_save_open.Position = Convert.ToInt64("559004", 16);
+            update_save_write.Write(mStartingHammer);
+
+            byte[] mStartingGear = ML4E_StringToByteArray(byte.Parse(roNumudMStartingGear.Text).ToString("X2"));
+            Array.Reverse(mStartingGear);
+            update_save_open.Position = Convert.ToInt64("559006", 16);
+            update_save_write.Write(mStartingGear);
+
 
             #endregion
 
@@ -127,6 +153,16 @@ namespace MLDT_Cobin_Editor
         private void cmbbxMStartingBoots_SelectedIndexChanged(object sender, EventArgs e)
         {
             roNumudMStartingBoots.Value = cmbbxMStartingBoots.SelectedIndex;
+        }
+
+        private void cmbbxMStartingHammers_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            roNumudMStartingHammer.Value = cmbbxMStartingHammers.SelectedIndex+35;
+        }
+
+        private void cmbbxMStartingGear_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            roNumudMStartingGear.Value = cmbbxMStartingGear.SelectedIndex+70;
         }
     }
 }
