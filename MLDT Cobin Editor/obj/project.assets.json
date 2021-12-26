@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Alice\\source\\repos\\MLDT Cobin Editor\\MLDT Cobin Editor\\MLDT Cobin Editor.csproj",
+      "projectUniqueName": "C:\\Users\\Alice\\Source\\Repos\\MLDT-Cobin-Editor\\MLDT Cobin Editor\\MLDT Cobin Editor.csproj",
       "projectName": "MLDT Cobin Editor",
-      "projectPath": "C:\\Users\\Alice\\source\\repos\\MLDT Cobin Editor\\MLDT Cobin Editor\\MLDT Cobin Editor.csproj",
+      "projectPath": "C:\\Users\\Alice\\Source\\Repos\\MLDT-Cobin-Editor\\MLDT Cobin Editor\\MLDT Cobin Editor.csproj",
       "packagesPath": "C:\\Users\\Alice\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Alice\\source\\repos\\MLDT Cobin Editor\\MLDT Cobin Editor\\obj\\",
+      "outputPath": "C:\\Users\\Alice\\Source\\Repos\\MLDT-Cobin-Editor\\MLDT Cobin Editor\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
