@@ -30,10 +30,13 @@ namespace MLDT_Cobin_Editor
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.openCodeBin = new System.Windows.Forms.Button();
-            this.savedataButton = new System.Windows.Forms.Button();
             this.roMStartingBootsTXT = new System.Windows.Forms.TextBox();
             this.cmbbxMStartingBoots = new System.Windows.Forms.ComboBox();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.openCobin = new System.Windows.Forms.ToolStripMenuItem();
+            this.saveCobin = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -44,26 +47,6 @@ namespace MLDT_Cobin_Editor
             this.label1.Size = new System.Drawing.Size(115, 15);
             this.label1.TabIndex = 0;
             this.label1.Text = "Change Mario Boots";
-            // 
-            // openCodeBin
-            // 
-            this.openCodeBin.Location = new System.Drawing.Point(13, 13);
-            this.openCodeBin.Name = "openCodeBin";
-            this.openCodeBin.Size = new System.Drawing.Size(126, 35);
-            this.openCodeBin.TabIndex = 2;
-            this.openCodeBin.Text = "Open Code.bin file";
-            this.openCodeBin.UseVisualStyleBackColor = true;
-            this.openCodeBin.Click += new System.EventHandler(this.openCodeBin_Click);
-            // 
-            // savedataButton
-            // 
-            this.savedataButton.Location = new System.Drawing.Point(145, 13);
-            this.savedataButton.Name = "savedataButton";
-            this.savedataButton.Size = new System.Drawing.Size(138, 35);
-            this.savedataButton.TabIndex = 3;
-            this.savedataButton.Text = "Save Code.bin file";
-            this.savedataButton.UseVisualStyleBackColor = true;
-            this.savedataButton.Click += new System.EventHandler(this.savedataButton_Click_1);
             // 
             // roMStartingBootsTXT
             // 
@@ -120,6 +103,40 @@ namespace MLDT_Cobin_Editor
             this.cmbbxMStartingBoots.TabIndex = 5;
             this.cmbbxMStartingBoots.SelectedIndexChanged += new System.EventHandler(this.cmbbxMStartingBoots_SelectedIndexChanged);
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fileToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(304, 24);
+            this.menuStrip1.TabIndex = 6;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // fileToolStripMenuItem
+            // 
+            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.openCobin,
+            this.saveCobin});
+            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
+            this.fileToolStripMenuItem.Text = "File";
+            // 
+            // openCobin
+            // 
+            this.openCobin.Name = "openCobin";
+            this.openCobin.Size = new System.Drawing.Size(180, 22);
+            this.openCobin.Text = "Open";
+            this.openCobin.Click += new System.EventHandler(this.openCobin_Click);
+            // 
+            // saveCobin
+            // 
+            this.saveCobin.Enabled = false;
+            this.saveCobin.Name = "saveCobin";
+            this.saveCobin.Size = new System.Drawing.Size(180, 22);
+            this.saveCobin.Text = "Save";
+            this.saveCobin.Click += new System.EventHandler(this.saveCobin_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -127,11 +144,13 @@ namespace MLDT_Cobin_Editor
             this.ClientSize = new System.Drawing.Size(304, 199);
             this.Controls.Add(this.cmbbxMStartingBoots);
             this.Controls.Add(this.roMStartingBootsTXT);
-            this.Controls.Add(this.savedataButton);
-            this.Controls.Add(this.openCodeBin);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "MLDT Cobin Editor";
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -140,10 +159,12 @@ namespace MLDT_Cobin_Editor
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button openCodeBin;
-        private System.Windows.Forms.Button savedataButton;
         private System.Windows.Forms.TextBox roMStartingBootsTXT;
         private System.Windows.Forms.ComboBox cmbbxMStartingBoots;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem openCobin;
+        private System.Windows.Forms.ToolStripMenuItem saveCobin;
     }
 }
 
