@@ -64,7 +64,7 @@ namespace MLDT_Cobin_Editor
                     {
                         savegame_br.BaseStream.Position = 0x559002;
                         byte mStartingBoots2 = (byte)savegame_fs.ReadByte();
-                        roMStartingBootsTXT.Text = (mStartingBoots2.ToString()); // Sets the value to a hidden text box
+                        roNumudMStartingBoots.Text = (mStartingBoots2.ToString()); // Sets the value to a hidden text box
                         cmbbxMStartingBoots.SelectedIndex = mStartingBoots2;
                     }
 
@@ -82,7 +82,12 @@ namespace MLDT_Cobin_Editor
             update_save_write = new System.IO.BinaryWriter(update_save_open);
 
             #region data
-            byte[] mStartingBoots = ML4E_StringToByteArray(byte.Parse(roMStartingBootsTXT.Text).ToString("X2"));
+            /*byte[] mStartingBoots = ML4E_StringToByteArray(byte.Parse(roMStartingBootsTXT.Text).ToString("X2"));
+            Array.Reverse(mStartingBoots);
+            update_save_open.Position = Convert.ToInt64("559002", 16);
+            update_save_write.Write(mStartingBoots);*/
+
+            byte[] mStartingBoots = ML4E_StringToByteArray(byte.Parse(roNumudMStartingBoots.Text).ToString("X2"));
             Array.Reverse(mStartingBoots);
             update_save_open.Position = Convert.ToInt64("559002", 16);
             update_save_write.Write(mStartingBoots);
@@ -107,9 +112,6 @@ namespace MLDT_Cobin_Editor
                 long length = savegame_fs.Length;
                 {
                     saveCobin.Enabled = true;
-                    saveCobin.Enabled = true;
-                    // saveasCobin.Enabled = true;
-                    // copyCobin.Enabled = true;
                 }
                 savegame_br.Close();
             }
@@ -124,7 +126,7 @@ namespace MLDT_Cobin_Editor
 
         private void cmbbxMStartingBoots_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            roNumudMStartingBoots.Value = cmbbxMStartingBoots.SelectedIndex;
         }
     }
 }

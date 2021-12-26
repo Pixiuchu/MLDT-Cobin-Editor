@@ -36,7 +36,9 @@ namespace MLDT_Cobin_Editor
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openCobin = new System.Windows.Forms.ToolStripMenuItem();
             this.saveCobin = new System.Windows.Forms.ToolStripMenuItem();
+            this.roNumudMStartingBoots = new System.Windows.Forms.NumericUpDown();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.roNumudMStartingBoots)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -109,7 +111,7 @@ namespace MLDT_Cobin_Editor
             this.fileToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(304, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1389, 24);
             this.menuStrip1.TabIndex = 6;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -137,11 +139,19 @@ namespace MLDT_Cobin_Editor
             this.saveCobin.Text = "Save";
             this.saveCobin.Click += new System.EventHandler(this.saveCobin_Click);
             // 
+            // roNumudMStartingBoots
+            // 
+            this.roNumudMStartingBoots.Location = new System.Drawing.Point(1051, 42);
+            this.roNumudMStartingBoots.Name = "roNumudMStartingBoots";
+            this.roNumudMStartingBoots.Size = new System.Drawing.Size(120, 23);
+            this.roNumudMStartingBoots.TabIndex = 7;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(304, 199);
+            this.ClientSize = new System.Drawing.Size(1389, 673);
+            this.Controls.Add(this.roNumudMStartingBoots);
             this.Controls.Add(this.cmbbxMStartingBoots);
             this.Controls.Add(this.roMStartingBootsTXT);
             this.Controls.Add(this.label1);
@@ -151,6 +161,7 @@ namespace MLDT_Cobin_Editor
             this.Text = "MLDT Cobin Editor";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.roNumudMStartingBoots)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -165,6 +176,7 @@ namespace MLDT_Cobin_Editor
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem openCobin;
         private System.Windows.Forms.ToolStripMenuItem saveCobin;
+        private System.Windows.Forms.NumericUpDown roNumudMStartingBoots;
     }
 }
 
